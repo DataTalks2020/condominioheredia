@@ -1,0 +1,392 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 22 oct. 2020, 15:59:13
+    Author     : arielrubi
+*/
+body, html{
+    /*color: #fff;
+    background: #006493 !important;
+    background-color: #006493 !important;
+    overflow-x: hidden;
+    overflow-y: hidden;*/
+}
+.logo{
+    width: 50%;
+    margin-left: 6rem!important;
+}
+.financiamiento-logo{
+    width: 150px;
+    margin-left: 35% !important;
+    margin-top: 40%!important;
+}
+.texto-financiamiento{
+    width: 45%;
+    margin-left: 22% !important;
+    font-size: 20px; 
+    text-transform: uppercase; 
+    background: rgba(0,104,177,0.7);
+    background-color: rgba(0,104,177,0.7);
+}
+.formulario-principal-cuadro{
+    z-index: 2; 
+}
+.formulario-principal{
+    position: absolute;
+    width: 55%;
+    background: rgba(255,255,255,0.6);
+    background-color: rgba(255,255,255,0.6);
+}
+.formulario-principal h4{ 
+    text-transform: uppercase; 
+    margin-top: -15px;
+}
+.formulario-principal p{ 
+    text-transform: uppercase;
+    font-size: 14px;
+}  
+.form-control{
+    font-size: 14px;
+    height: 35px;
+    border-radius: 0px;
+} 
+.btnSolicitar{
+    font-weight: 300;
+}  
+.principal{
+    height: 850px;
+    background-image: url("../img/fondo-principal.png");
+    background-repeat: no-repeat;
+    background-size: 65% 100%; 
+}
+.cuadro1{ 
+    height: 283.33px;
+    width: 60%;
+    background: #093879;
+    background-color: #093879;
+}
+.cuadro2{ 
+    height: 283.33px;
+    width: 60%;
+    background: #0068b1;
+    background-color: #0068b1;
+}
+.cuadro3{ 
+    height: 283.33px;
+    width: 60%;
+    background: #00b3b9;
+    background-color: #00b3b9;
+}
+.img-cuadros{
+    width: 300px;
+    height: 225px;
+}
+.bg-azul{
+    background: #093879;
+    background-color: #093879;
+}
+.img-iconos{
+    width: 100px;
+}
+#btnSolicitar:focus, #btnSolicitar:active, #btnSolicitar:hover
+{
+    outline: 0; 
+    box-shadow: none !important;
+}
+
+.img-redes{
+    width: 25px;
+}
+.bg-dark{
+    background: #000 !important;
+    background-color: #000 !important;
+}
+#emailHelp, #emailHelp1{
+    font-weight: bold;
+} 
+.texto-gracias {
+    position: absolute;
+    left: 30%;
+    top: 40%;
+}
+@media only screen and (max-width: 1680px){
+    .texto-financiamiento { 
+        margin-left: 24% !important;
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width: 1480px){
+    .texto-financiamiento { 
+        font-size: 17px;
+        margin-left: 25% !important;
+    } 
+}
+@media only screen and (max-width: 1380px){
+    .texto-financiamiento { 
+        font-size: 15px;
+        margin-left: 27% !important;
+    } 
+}
+@media only screen and (max-width: 1275px){
+    .texto-financiamiento { 
+        font-size: 13px; 
+        margin-left: 29% !important;
+    }
+    .texto-gracias {
+        left: 25%;
+    }
+}
+@media only screen and (max-width: 1175px){
+    .texto-financiamiento { 
+        font-size: 12px; 
+    } 
+    .formulario-principal{ 
+        width: 50%;
+    } 
+    .texto-gracias {
+        left: 20%;
+    }
+}
+
+@media only screen and (max-width: 1080px){
+    .logo { 
+        margin-left: 5rem!important;
+    }
+    .formulario-principal {
+        width: 55%;
+        margin-left: -10%;
+    }
+    .formulario-principal .col-sm-9, .formulario-principal .col-md-9{
+        padding: 0;
+    }
+    .form-control {
+        font-size: 11px;
+    } 
+    .texto-financiamiento {
+        font-size: 11px;
+        margin-left: 31% !important;
+    }
+    .texto-gracias { 
+        left: 15%; 
+    }
+
+}
+
+@media only screen and (max-width: 960px){
+    .formulario-final h2 { 
+        font-size: 30px;
+    }
+    .formulario-principal p {
+        font-size: 11px;
+    }
+    .formulario-principal {
+        width: 120%;
+    }
+}
+@media only screen and (max-width: 860px){
+    .financiamiento-logo { 
+        margin-left: 16% !important;
+    }
+
+}
+@media only screen and (max-width: 768px){
+    .form-control {
+        font-size: 12px;
+    }
+    .fondo-final{
+        background-image: url("../img/fondo-final.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%; 
+        height: 600px;
+    }
+    .formulario-principal { 
+        width: 65%;
+        margin-left: -10%;
+    }
+    .formulario-principal p {
+        font-size: 12px;
+    }
+    .financiamiento-logo {
+        width: 120px;
+    }
+    .principal {  
+        background-size: 63% 100%; 
+    }
+    .financiamiento-logo { 
+        margin-left: 0% !important;
+        margin-top: 10%!important;
+    }
+    .texto-financiamiento {
+        margin-left: 20% !important;
+        margin-top: -33%;
+        height: 90px;
+        width: 70%;
+        border-radius: 0px 50px 50px 0px;
+        padding: 20px 0px 0px 50px !important;
+        font-size: 11px;
+    }
+    .texto-gracias{ 
+        left: 10%; 
+        top: 40%; 
+        font-size: 2.2rem;
+    }
+    .cuadro1, .cuadro2, .cuadro3{
+        width: 64%;
+    }
+    .img-cuadros {
+        width: 200px;
+    }
+}
+@media only screen and (max-width: 576px){
+    .form-control {
+        font-size: 12px;
+    }
+    .fondo-final{
+        background-image: url("../img/fondo-final.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%; 
+        height: 600px;
+    }
+    .formulario-principal {
+        position: relative;
+        width: 90%;
+        margin-left: 5%;
+    }
+    .formulario-principal p {
+        font-size: 12px;
+    }
+    .financiamiento-logo {
+        width: 120px;
+    }
+    .principal {  
+        background-size: 700px 100%;
+        height: 950px;
+    }
+    .financiamiento-logo { 
+        margin-left: 0% !important;
+        margin-top: 10%!important;
+    }
+    .texto-financiamiento {
+        margin-left: 20% !important;
+        margin-top: -26%;
+        height: 90px;
+        width: 70%;
+        border-radius: 0px 50px 50px 0px;
+        padding: 20px 0px 0px 50px !important;
+        font-size: 12px;
+    }
+    .texto-gracias{ 
+        left: 10%; 
+        top: 40%; 
+        font-size: 2.2rem;
+    }
+    .cuadro1, .cuadro2, .cuadro3{
+        width: 100%;
+    }
+    .texto-gracias{ 
+        left: 10%; 
+        top: 40%; 
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 380px){
+    .cuadro-ofrecemos {
+        width: 150px;
+    }
+    .texto-gracias { 
+        font-size: 1.1rem;
+    } 
+    .texto-financiamiento { 
+        margin-top: -28%;  
+    }
+}
+
+@media (max-width: 320px){
+    .texto-financiamiento { 
+        margin-top: -34%; 
+        font-size: 10px;
+    }
+    .form-control {
+        font-size: 10px;
+    }
+    .texto-gracias { 
+        font-size: 0.9rem;
+    }
+}
+@media only screen and (max-width: 900px) and (orientation: landscape) {
+    .principal {
+        background-size: 100% 100%; 
+    }
+    .texto-gracias {
+        left: 8%;
+    }
+    .formulario-principal {
+        width: 60%;
+        margin-left: -14%;
+    } 
+    .texto-financiamiento {
+        margin-top: 0%;
+        font-size: 13px;
+        width: 67%;
+        margin-left: 6% !important;
+    }
+    .img-cuadros {
+        width: 250px; 
+    }
+
+}
+@media only screen and (max-width: 760px) and (orientation: landscape) {
+    .principal {
+        background-size: 100% 100%; 
+    } 
+    .formulario-principal {
+        width: 70%;
+        margin-left: 15%;
+    }
+    .texto-financiamiento { 
+        margin-top: -35%;
+        font-size: 9px;
+    }
+    .texto-financiamiento {
+        margin-top: -14%;
+        font-size: 12px;
+        width: 40%;
+        margin-left: 30% !important;
+    }
+    .financiamiento-logo {
+        margin-left: 25% !important; 
+    }
+    .img-cuadros {
+        width: 400px; 
+    }
+}
+@media only screen and (max-width: 680px) and (orientation: landscape) {
+
+    .texto-gracias {
+        font-size: 2rem;
+    }
+    .texto-financiamiento { 
+        height: 75px;
+    }
+}
+@media only screen and (max-width: 570px) and (orientation: landscape) {
+    .financiamiento-logo {
+        margin-left: 18% !important;
+    }
+    .texto-financiamiento {
+        margin-top: -18%; 
+        height: 85px;
+    }
+    .texto-gracias {
+        font-size: 1.7rem;
+    }
+    .formulario-principal {
+        width: 70%;
+    }
+    .principal {
+        background-size: 750px 100%;
+    }
+}
