@@ -15,8 +15,7 @@ body, html{
     overflow-y: hidden;*/
 }
 .logo{
-    width: 50%;
-    margin-left: 6rem!important;
+    width: 150px; 
 }
 .financiamiento-logo{
     width: 150px;
@@ -26,7 +25,7 @@ body, html{
 .texto-financiamiento{
     width: 45%;
     margin-left: 22% !important;
-    font-size: 20px; 
+    font-size: 26px; 
     text-transform: uppercase; 
     background: rgba(0,104,177,0.7);
     background-color: rgba(0,104,177,0.7);
@@ -40,13 +39,28 @@ body, html{
     background: rgba(255,255,255,0.6);
     background-color: rgba(255,255,255,0.6);
 }
-.formulario-principal h4{ 
+.formulario-principal h1{ 
     text-transform: uppercase; 
-    margin-top: -15px;
+    margin-top: -10px;
 }
+.formulario-principal h5{ 
+    text-transform: uppercase;
+    font-size: 16px;
+}  
 .formulario-principal p{ 
     text-transform: uppercase;
-    font-size: 14px;
+}  
+.formulario-principal p.primer-texto{  
+    background: #093879;
+    width: 300px;
+    color: #fff;
+    font-size: 16px; 
+}  
+.formulario-principal p.segundo-texto{  
+    font-size: 7px;
+    width: 302px;
+    text-align: justify !important;
+    font-weight: 500;
 }  
 .form-control{
     font-size: 14px;
@@ -57,32 +71,32 @@ body, html{
     font-weight: 300;
 }  
 .principal{
-    height: 850px;
+    height: 1000px;
     background-image: url("../img/fondo-principal.png");
     background-repeat: no-repeat;
     background-size: 65% 100%; 
 }
 .cuadro1{ 
-    height: 283.33px;
+    height: 333.33px;
     width: 60%;
     background: #093879;
     background-color: #093879;
 }
 .cuadro2{ 
-    height: 283.33px;
+    height: 333.33px;
     width: 60%;
     background: #0068b1;
     background-color: #0068b1;
 }
 .cuadro3{ 
-    height: 283.33px;
+    height: 333.33px;
     width: 60%;
     background: #00b3b9;
     background-color: #00b3b9;
 }
 .img-cuadros{
-    width: 300px;
-    height: 225px;
+    width: 333.33px;
+    height: 270px;
 }
 .bg-azul{
     background: #093879;
@@ -127,46 +141,76 @@ body, html{
     margin-top: -15px;
     font-weight: 400;
 }
+.fondo-con-img-texto{
+    background: #093879;
+    background-color: #093879;
+}
+.imagen-contexto{
+    width: 550px;
+}
+.bg-celeste{
+    background: #0167b1;
+    background-color: #0167b1;
+}
+.cuadro-central h3{
+    text-transform: uppercase;
+}
+.cuadro-ofrecemos{ 
+    width: 190px; 
+}  
+.cuadro-ofrecemos label b{
+    text-transform: uppercase; 
+    font-weight: 500;
+}  
 @media only screen and (max-width: 1680px){
     .texto-financiamiento { 
-        margin-left: 24% !important;
-        font-size: 18px;
+        margin-left: 24% !important; 
     }
 }
 @media only screen and (max-width: 1480px){
     .texto-financiamiento { 
-        font-size: 17px;
+        font-size: 20px;
         margin-left: 25% !important;
     } 
 }
 @media only screen and (max-width: 1380px){
-    .texto-financiamiento { 
-        font-size: 15px;
+    .texto-financiamiento {  
         margin-left: 27% !important;
     } 
+    .cuadro-ofrecemos{ 
+        width: 150px; 
+    }
 }
 @media only screen and (max-width: 1275px){
-    .texto-financiamiento { 
-        font-size: 13px; 
+    .cuadro-central h3 {
+        font-size: 25px;
+    }
+    .cuadro-ofrecemos label b{
+        font-size: 15px;
+    }
+    .texto-financiamiento {  
         margin-left: 29% !important;
-    } 
+    }  
 }
-@media only screen and (max-width: 1175px){
-    .texto-financiamiento { 
-        font-size: 12px; 
-    } 
+@media only screen and (max-width: 1175px){   
     .formulario-principal{ 
         width: 50%;
-    }  
+    } 
+    .cuadro-ofrecemos {
+        width: 130px;
+    }
 }
 
 @media only screen and (max-width: 1080px){
-    .logo { 
-        margin-left: 5rem!important;
+    .cuadro-central h3 {
+        font-size: 21px;
     }
+    .cuadro-ofrecemos {
+        width: 120px;
+    } 
     .formulario-principal {
-        width: 55%;
-        margin-left: -10%;
+        width: 56%;
+        margin-left: -15% !important;
     }
     .formulario-principal .col-sm-9, .formulario-principal .col-md-9{
         padding: 0;
@@ -175,15 +219,25 @@ body, html{
         font-size: 11px;
     } 
     .texto-financiamiento {
-        font-size: 11px;
+        font-size: 17px;
         margin-left: 31% !important;
     } 
     .principal-exito .formulario-principal { 
         width: 50%; 
     }
+    .formulario-principal p.primer-texto { 
+        width: 280px; 
+        font-size: 14px;
+    }
+    .formulario-principal p.segundo-texto { 
+        width: 282px;
+    }
 }
 
-@media only screen and (max-width: 960px){
+@media only screen and (max-width: 999px){
+    .principal { 
+        background-size: 100% 100%;
+    }
     .formulario-final h2 { 
         font-size: 30px;
     }
@@ -191,16 +245,49 @@ body, html{
         font-size: 11px;
     }
     .formulario-principal {
-        width: 120%;
+        width: 100%;
+    }
+    .cuadro1, .cuadro2, .cuadro3{
+        width: 100%;
+    } 
+    .img-cuadros {
+        width: 500px;
     }
 }
 @media only screen and (max-width: 860px){
     .financiamiento-logo { 
         margin-left: 16% !important;
     }
-
+    .bg-celeste{
+        background: #093879;
+        background-color: #093879;
+    }
+    .fondo-con-img-texto{
+        background: #093879;
+        background-color: #093879;
+    }
 }
 @media only screen and (max-width: 768px){
+    .cuadro-central h3 {
+        font-size: 18px;
+    }
+    .cuadro-ofrecemos label b {
+    font-size: 14px;
+}
+    .cuadro-ofrecemos {
+        width: 100px;
+    }
+    .bg-celeste{
+        background: #093879;
+        background-color: #093879;
+    }
+    .fondo-con-img-texto{
+        background: #093879;
+        background-color: #093879;
+    }
+    .imagen-contexto{
+        width: 350px;
+    }
     .form-control {
         font-size: 12px;
     }
@@ -209,10 +296,10 @@ body, html{
         background-repeat: no-repeat;
         background-size: 100% 100%; 
         height: 600px;
-    }
-    .formulario-principal { 
-        width: 65%;
-        margin-left: -10%;
+    } 
+    .formulario-principal {
+        width: 75%;
+        margin-left: 20% !important;
     }
     .formulario-principal p {
         font-size: 12px;
@@ -221,7 +308,8 @@ body, html{
         width: 120px;
     }
     .principal {  
-        background-size: 63% 100%; 
+        background-size: 900px 100%; 
+        height: 1000px;
     }
     .financiamiento-logo { 
         margin-left: 0% !important;
@@ -231,16 +319,16 @@ body, html{
         margin-left: 20% !important;
         margin-top: -33%;
         height: 90px;
-        width: 70%;
+        width: 80%;
         border-radius: 0px 50px 50px 0px;
         padding: 20px 0px 0px 50px !important;
-        font-size: 11px;
+        font-size: 16px;
     } 
     .cuadro1, .cuadro2, .cuadro3{
-        width: 64%;
+        width: 100%;
     }
     .img-cuadros {
-        width: 200px;
+        width: 350px;
     }
     .principal-exito {  
         background-size: 550px 100%;
@@ -258,13 +346,13 @@ body, html{
     .fondo-final{
         background-image: url("../img/fondo-final.png");
         background-repeat: no-repeat;
-        background-size: 100% 100%; 
-        height: 600px;
+        background-size: 700px 100%; 
+        height: 800px;
     }
     .formulario-principal {
         position: relative;
         width: 90%;
-        margin-left: 5%;
+        margin-left: 5% !important;
     }
     .formulario-principal p {
         font-size: 12px;
@@ -274,7 +362,7 @@ body, html{
     }
     .principal {  
         background-size: 700px 100%;
-        height: 950px;
+        height: 1150px;
     }
     .financiamiento-logo { 
         margin-left: 0% !important;
@@ -286,8 +374,8 @@ body, html{
         height: 90px;
         width: 70%;
         border-radius: 0px 50px 50px 0px;
-        padding: 20px 0px 0px 50px !important;
-        font-size: 12px;
+        padding: 15px 0px 0px 50px !important;
+        font-size: 22px;
     } 
     .cuadro1, .cuadro2, .cuadro3{
         width: 100%;
@@ -305,19 +393,36 @@ body, html{
 @media (max-width: 320px){
     .texto-financiamiento { 
         margin-top: -34%; 
-        font-size: 10px;
+        font-size: 17px;
     }
     .form-control {
         font-size: 10px;
     } 
+    .img-cuadros {
+        width: 250px;
+    }
+    .imagen-contexto {
+        width: 260px;
+    }
+    .cuadro-ofrecemos {
+        width: 130px;
+    }
+    .formulario-principal p.primer-texto { 
+        width: 265px; 
+        font-size: 14px;
+    }
+    .formulario-principal p.segundo-texto { 
+        width: 268px;
+    }
 }
 @media only screen and (max-width: 900px) and (orientation: landscape) {
     .principal {
         background-size: 100% 100%; 
     } 
     .formulario-principal {
-        width: 60%;
-        margin-left: -14%;
+        width: 80%;
+        position: relative;
+        margin-left: 15% !important;
     } 
     .texto-financiamiento {
         margin-top: 0%;
@@ -326,17 +431,40 @@ body, html{
         margin-left: 6% !important;
     }
     .img-cuadros {
-        width: 250px; 
+        width: 450px; 
     }
-
+    .cuadro-ofrecemos {
+        width: 105px;
+    }
+    .cuadro-ofrecemos label b {
+        font-size: 13px;
+    }
+    .cuadro-central h3 {
+        font-size: 19px;
+    }
+    .cuadro1, .cuadro2, .cuadro3 {
+        width: 100%;
+    }
 }
 @media only screen and (max-width: 760px) and (orientation: landscape) {
+    .cuadro-ofrecemos {
+        width: 90px;
+    }
+    .cuadro-ofrecemos label b {
+        font-size: 11px;
+    }
+    .cuadro-central h3 {
+        font-size: 15px;
+    }
+    .img-iconos {
+        width: 85px;
+    }
     .principal {
         background-size: 100% 100%; 
+        height: 1200px;
     } 
     .formulario-principal {
-        width: 70%;
-        margin-left: 15%;
+        width: 70%; 
     }
     .texto-financiamiento { 
         margin-top: -35%;
@@ -344,9 +472,10 @@ body, html{
     }
     .texto-financiamiento {
         margin-top: -14%;
-        font-size: 12px;
+        font-size: 18px;
         width: 40%;
         margin-left: 30% !important;
+        padding-top: 5px !important;
     }
     .financiamiento-logo {
         margin-left: 25% !important; 
@@ -359,6 +488,12 @@ body, html{
     }
     .principal-exito .formulario-principal {
         width: 60%; 
+    }
+    .cuadro1, .cuadro2, .cuadro3 {
+        width: 100%;
+    }
+    .fondo-final { 
+        height: 750px;
     }
 }
 @media only screen and (max-width: 680px) and (orientation: landscape) {
@@ -379,5 +514,14 @@ body, html{
     }
     .principal {
         background-size: 750px 100%;
+    }
+    .cuadro-central h3 {
+        font-size: 20px;
+    }
+    .img-iconos {
+        width: 100px;
+    }
+    .cuadro-ofrecemos {
+        width: 150px;
     }
 }
